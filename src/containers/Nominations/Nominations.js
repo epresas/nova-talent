@@ -21,7 +21,7 @@ const Nominations = (props) => {
         <p>description: {nomination.description}</p>
         <p>status: {nomination.status}</p>
       </li>
-    )
+      ) 
     )
   }
 

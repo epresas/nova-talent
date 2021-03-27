@@ -25,6 +25,18 @@
         "referrer": "c6e317b-76e-4fcc-4adb-2bd100221",
         "dateReferred": "2021-03-27T11:02:46.682Z",
         "status": "REJECTED"
+      },
+      {
+        "id": "1ec8d2-af42-6afe-23f7-b58ec07682",
+        "email": "maj@chirinos.com",
+        "description": "Candidate 3",
+        "score": {
+          "involvement": 1,
+          "talent": 10
+        },
+        "referrer": "03bd308-bf57-abd7-e1cd-ea87481cc4c7",
+        "dateReferred": "2021-03-27T11:43:21.899Z",
+        "status": "APPROVED"
       }
     ]
   }

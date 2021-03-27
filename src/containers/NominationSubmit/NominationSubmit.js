@@ -39,10 +39,9 @@ const NominationSubmit = (props) => {
 
     updatedNominations.data.push(nomination);
 
-    debugger;
     axios.post(`${apiUrl}/nominations`, updatedNominations)
       .then(response => {
-        debugger;
+        console.log('Candidate Added succes')
       })
       .catch(err => {
         console.log(err);
