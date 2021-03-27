@@ -1,0 +1,31 @@
+{
+  "nominations": {
+    "message": "Request message response",
+    "data": [
+      {
+        "id": "8c8ff55c-11f5-4b3c-8596-3d9831a8934d",
+        "email": "newcandidate@gmail.com",
+        "description": "newcandidate@gmail.com",
+        "score": {
+          "involvement": 8,
+          "talent": 10
+        },
+        "referrer": "8c8ff55c-11f5-4b3c-8596-3d9831a8934d",
+        "dateReferred": "2020-08-20T08:40:58.200Z",
+        "status": "PENDING"
+      },
+      {
+        "id": "7e37662-d54f-1cd4-b6aa-c7f560b8e7f",
+        "email": "ednmj2@gmail.com",
+        "description": "another candidate",
+        "score": {
+          "involvement": 5,
+          "talent": 5
+        },
+        "referrer": "c6e317b-76e-4fcc-4adb-2bd100221",
+        "dateReferred": "2021-03-27T11:02:46.682Z",
+        "status": "REJECTED"
+      }
+    ]
+  }
+}

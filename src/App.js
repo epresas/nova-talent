@@ -1,25 +1,27 @@
-import logo from './logo.svg';
+import React, { Suspense } from 'react'
+import { Route, Switch, withRouter, Redirect } from 'react-router-dom';
+
 import './App.css';
+import NominationSubmit from './containers/NominationSubmit/NominationSubmit';
+import Nominations from './containers/Nominations/Nominations'
 
 function App() {
+  const routes = (
+    <Switch>
+      <Route path="/" exact component={Nominations} />
+      <Route path="/nominations" exact component={Nominations} />
+      <Route path="/nominate" exact component={NominationSubmit} />
+      <Redirect to="/"/>
+    </Switch>
+  );
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Suspense fallback={<p>Loading...</p>}>
+        {routes}
+      </Suspense> 
     </div>
   );
 }
 
-export default App;
+export default withRouter(App);
