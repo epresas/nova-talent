@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { useHistory } from 'react-router-dom';
 import uuid from 'react-uuid';
 import axios from 'axios';
 
@@ -6,8 +7,9 @@ import NominationForm from './NominationForm/NominationForm';
 
 const NominationSubmit = (props) => {
   const apiUrl = 'http://localhost:3001';
-
+  const history = useHistory();
   const [nominations, setNominations] = useState(null);
+  const [formError, setFormError] = useState(null);
 
   useEffect(() => {
     axios.get(`${apiUrl}/nominations`)
@@ -23,7 +25,7 @@ const NominationSubmit = (props) => {
     
     // If candidate email exists, discard application
     if (isCandidateRegistered) {
-      console.log('candidate already exists!');
+      setFormError(`Candidate already exists, can't nominate`)
       return false;
     }
 
@@ -41,7 +43,7 @@ const NominationSubmit = (props) => {
 
     axios.post(`${apiUrl}/nominations`, updatedNominations)
       .then(response => {
-        console.log('Candidate Added succes')
+        history.push('/nominations');
       })
       .catch(err => {
         console.log(err);
@@ -50,7 +52,7 @@ const NominationSubmit = (props) => {
   };
 
   return (
-    <NominationForm formSubmitted={handleNomination} />
+    <NominationForm formSubmitted={handleNomination} formErrorMessage={formError}/>
   );
 }
 
