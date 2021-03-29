@@ -15,63 +15,27 @@
         "status": "PENDING"
       },
       {
-        "id": "7e37662-d54f-1cd4-b6aa-c7f560b8e7f",
-        "email": "ednmj2@gmail.com",
-        "description": "another candidate",
+        "id": "b0fe74c-a706-a250-30b-1d55f7af6e21",
+        "email": "candidate2@nova.com",
+        "description": "Candidate 2 ",
         "score": {
           "involvement": 5,
-          "talent": 5
-        },
-        "referrer": "c6e317b-76e-4fcc-4adb-2bd100221",
-        "dateReferred": "2021-03-27T11:02:46.682Z",
-        "status": "REJECTED"
-      },
-      {
-        "id": "1ec8d2-af42-6afe-23f7-b58ec07682",
-        "email": "maj@chirinos.com",
-        "description": "Candidate 3",
-        "score": {
-          "involvement": 1,
           "talent": 10
         },
-        "referrer": "03bd308-bf57-abd7-e1cd-ea87481cc4c7",
-        "dateReferred": "2021-03-27T11:43:21.899Z",
+        "referrer": "42ce4d4-d0d3-ca76-5e3c-d5dcbcefe47",
+        "dateReferred": "2021-03-29T08:54:56.361Z",
         "status": "APPROVED"
       },
       {
-        "id": "b15dde4-7338-63eb-f680-6543f46e5ad1",
-        "email": "ednmj1@gmail.com",
-        "description": "asdjhasdkh",
+        "id": "aac4887-8cde-4657-0a85-50344087c11b",
+        "email": "candidate3@nova.om",
+        "description": "Candidate with a long description, it should enclose in a maximum of three lines",
         "score": {
-          "involvement": 5,
-          "talent": 5
+          "involvement": 7,
+          "talent": 10
         },
-        "referrer": "8c1b3a-067-4261-b77-1e253d66d43",
-        "dateReferred": "2021-03-28T23:29:48.376Z",
-        "status": "REJECTED"
-      },
-      {
-        "id": "012054e-4751-bf8d-b41-52c02ff65db",
-        "email": "test@test.com",
-        "description": "another long description another long description another long description another long description",
-        "score": {
-          "involvement": 5,
-          "talent": 9
-        },
-        "referrer": "4aa8b-db8-61-fc-0c0ba482a353",
-        "dateReferred": "2021-03-29T00:01:11.659Z",
-        "status": "APPROVED"
-      },
-      {
-        "id": "c6dcae6-cab-f57-3601-ed2ff878fdde",
-        "email": "test2@ts.cs",
-        "description": "lkasdlkjasdlkjasldkjasd",
-        "score": {
-          "involvement": 5,
-          "talent": 9
-        },
-        "referrer": "208a4a-81c6-76de-602e-2ad673f7b4c5",
-        "dateReferred": "2021-03-29T00:16:06.403Z",
+        "referrer": "8014fca-7104-2c8f-cf2-a8afb8cc8033",
+        "dateReferred": "2021-03-29T08:55:56.962Z",
         "status": "APPROVED"
       }
     ]
